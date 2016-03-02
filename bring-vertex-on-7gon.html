@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<p>Stelle zuerst sicher, dass Du im Edit Mode bist.</p>
+<div class="figure">
+<img src="img/editmode.png" />
+</div>
+<p>Wir beginnen mit einem 7-Eck und stellen durch mehrmaliges Drücken der Taste A sicher, dass kein Vertex markiert ist.</p>
+<div class="figure">
+<img src="img/7gon-unselected.png" />
+</div>
+<p>Nun markieren wir einzig und allein die zum 7-Eck gehörenden Vertices. Dazu haben wir mindestens drei verschiedene Moeglichkeiten:</p>
+<ul>
+<li>Manuelles Selektieren aller 7 Vertices durch siebenmaliges Shift + RMB.</li>
+<li>Link-Selection, indem wir den Mauszeiger in die Naehe eines Vertex bewegen und die Taste L drücken. Dies markiert alle Vertices, die in einer Verbindung zu dem Vertex unter dem Mauszeiger stehen.</li>
+<li>Loop-Selection indem wir den Mauszeiger auf eine der <em>Kanten</em> bewegen und Alt + RMB drücken.</li>
+</ul>
+<p>Nachdem wir alle Vertices des 7-Ecks markiert haben, sollte sich uns folgendes Bild ergeben:</p>
+<div class="figure">
+<img src="img/7gon-selected.png" />
+</div>
+<p>Nun koennen wir mit dem Snap-Menü den 3D-Cursor auf den Schwerpunkt der 7 Vertices setzen. Dazu drücken wir Shift-S -&gt; Select.</p>
+<div class="figure">
+<img src="img/snap-cursor-to-s.png" />
+</div>
+<p>Der Cursor sollte nun im Mittelpunkt des 7-Ecks sitzen. Jetzt erschaffen wir einen weiteren Vertex, der in der Mitte platziert wird. Dazu selektieren wir am einfachsten einen einzelnen Vertex des 7-Ecks und duplizieren ihn mit Shift + D. Blender schaltet um in eine Aktion, in der wir durch Bewegung des Mauszeigers den neu erzeugten Vertex bewegen können. Da wir aber die Platzierung des neuen Vertex später erledigen, können wir die Aktion mit RMB abbrechen. Der neue Vertex sitzt nun genau auf der Position seines Zwillingsbruders, hebt sich aber durch die ungefärbten Edges von ihm ab.</p>
+<div class="figure">
+<img src="img/dupl-vert-sel.png" />
+</div>
+<p>Diesen neu erzeugten Vertex verschieben wir nun auf die Position des 3D-Cursors. Das gelingt mit Shift + S -&gt; Selection to Cursor.</p>
+<p>Das Ergebnis ist ein einzelner Vertex, der in der Mitte eines 7-Ecks sitzt.</p>
+</body>
+</html>
