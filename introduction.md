@@ -59,3 +59,14 @@ Das rotieren von Dingen erfolgt änlich wie das bewegen. Eingetippte feste Werte
 
 ## Dinge skalieren (S)
 Das skalieren von Dingen funktionert áhnlich wie das bewegen. Eingetippte Werte werden als Faktor interpretiert. Wenn man also ein Objekt um den Wert zwei skaliert, sind danach alle Distanzen doppelt so groß geworden.
+
+## Nochmal: Unterscheidung zwischen Objectmode und Editmode ist wichtig.
+Es sei hier nochmal genauer dargelegt, was eigentlich der Unterschied zwischen Object- und Editmode ist. Alle bisher genannten Operationen (Löschen, Bewegen, Rotieren und Skalieren) sind in beiden Modi möglich, haben aber unterschiedliche Konsequenzen. Im Objectmode wird das gesamte Objekt verändert, im Editmode alleine die Geometrie. Beobachtbar ist das nur an dem verschobenen Objektmittelpunkt, der in Blender bei markierten Objekten als kleiner oranger Kreis dargestellt wird.
+
+![Beispiel: Zwei Würfelobjekte, saßen ursprünglich auf der X-Y-Ebene und wurden um zwei Einheiten nach oben verschoben. Das linke im Editmode, dadurch ist der Objektmittelpunkt (kleiner oranger Kreis) nicht mitgewandert. Das rechte Objekt wurde im Objectmode verschoben, daher ist der Objektmittelpunkt mit verschoben worden. Bitte beachten, dass der Objektmittelpunkt nur bei markierten Objekten sichtbar ist.](img/obj-edit-grab.png)
+
+Da es häufig sinnvoll ist, den Objektmittelpunkt nur kontrolliert zu verschieben, empfiehlt es sich, alle Operationen nur im Editmode vorzunehmen.
+
+Die Löschfunktion nimmt hier eine Sonderrolle ein, da das Löschen im Editmode nur die Geometrie löscht. Es bleibt also ein leeres Objekt zurück, das zwar an verschiedenen Orten in Blender noch in Erscheinung tritt, im 3D-Fenster allerdings nicht mehr sichtbar ist. Deswegen: Löschen nur im Objectmode.
+
+## Endlich: Bearbeiten von Geometrie im Editmode
